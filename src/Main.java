@@ -30,4 +30,4 @@ public class Main {
         System.out.println("Here is your area: "+area+" ");
         scanner.close();
     }
-}2
+}
