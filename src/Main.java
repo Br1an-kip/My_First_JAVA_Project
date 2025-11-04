@@ -1,16 +1,33 @@
 import java.util.Scanner;
 public class Main {
     public static void main() {
+//        Calculate Area of a Rectangle
+        double width = 0;
+        double height = 0;
+        double area = 0;
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter Your name ");
-        String name = scanner.nextLine();
+        System.out.println("You wanna find the area of a Rectangle? (true/false): ");
+        boolean findArea = scanner.nextBoolean();
+        System.out.println();
 
-        System.out.println("Hi there " + name + " How are you doing ?");
+        System.out.println("Wagwan G");
+        if (findArea){
+            System.out.println("Then fill out the following :) ");
+        }
+        else {
+            System.out.println("Feel free to leave");
+        }
 
-        System.out.print("Whats Your GPA "+ name +" ? ");
-        double gpa = scanner.nextDouble();
-        System.out.println("Congrats you got a " + gpa+" in your GPA");
+        System.out.print("Whats the width ");
+        width = scanner.nextDouble();
+
+        System.out.print("Whats the Height ");
+        height = scanner.nextDouble();
+
+        area = width * height;
+        System.out.println("Here is your area: "+area+" ");
+        scanner.close();
     }
-}
+}2
